@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern profile portal</title>
+</head>
+
+<body>
+    <header>
+        <h1>Company Intern portal</h1>
+        <nav aria-label="navigation bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Intern profile</h2>
+            <article>
+                <h3>Rafia Noreen</h3>
+                <p><strong>Position:</strong>
+                    Website Development Intern</p>
+                <p><strong>Departement:</strong>Web Development</p>
+                <p><strong>Eduction:</strong>BS Information Technology</p>
+                <p><strong>Location:</strong>Pakistan</p>
+            </article>
+        </section>
+        <section id="skils">
+            <h2>Technical Skills</h2>
+            <table>
+                <caption>Intern Technical Skills</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            Skill
+                        </th>
+                        <th scope="col">
+                            Category
+                        </th>
+                        <th scope="col">
+                            Level
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Front-end</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Programming </td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>React Js</td>
+                        <td>Frontend Framework</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Programming</td>
+                        <td>Basic</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="experience">
+            <h2>Experience and Projects</h2>
+            <article>
+                <h3>Frontend Development Projects</h3>
+
+                <p>
+                    I have practiced frontend development by building
+                    portfolio websites and e-commerce projects.
+                </p>
+
+                <h4>Responsibilities</h4>
+
+                <ul>
+                    <li>Creating webpages using HTML.</li>
+                    <li>Designing layouts using CSS.</li>
+                    <li>Adding interactivity with JavaScript.</li>
+                    <li>Building user interfaces with React JS.</li>
+                    <li>Managing code using Git and GitHub.</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Career Objective</h3>
+
+                <p>
+                    My goal is to improve my development skills,
+                    gain practical industry experience, and contribute
+                    to real-world software projects.
+                </p>
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Contact the Intern </h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="fullname">
+                            Full Name:
+                        </label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter yourfull name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    </p>
+
+                    <p>
+                        <label for="date">Preferred Contact Date:</label>
+                        <input type="date" id="date" name="contact_date">
+                    </p>
+                     <p>
+                        <label for="department">Select Department:</label>
+
+                        <select id="department" name="department" required>
+                            <option value="">Choose a department</option>
+                            <option value="web">Web Development</option>
+                            <option value="software">Software Development</option>
+                            <option value="design">UI/UX Design</option>
+                        </select>
+                    </p>
+                     <p>
+                        <label for="resume">Upload Resume:</label>
+                        <input
+                            type="file"
+                            id="resume"
+                            name="resume"
+                            accept=".pdf,.doc,.docx">
+                    </p>
+
+                    <p>
+                        <label for="message">Message:</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            cols="30"
+                            placeholder="Write your message here"
+                            required></textarea>
+                    </p>
+                </fieldset>
+                 <button type="submit">Submit Form</button>
+                <button type="reset">Reset Form</button>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Company Intern Portal </p>
+        <p>All right reserved .</p>
+    </footer>
+</body>
+
+</html>
