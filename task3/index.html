@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h2>AdminPanel</h2>
+
+            <nav>
+                <a href="#" class="active">Dashboard</a>
+                <a href="#users"> Users</a>
+                <a href="#products"> Products</a>
+                <a href="#analysis"> Analytics</a>
+                <a href="#settings"> Settings</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="navbar">
+                <h1>Dashboard</h1>
+
+                <div class="user-info">
+                    <span>Welcome, Rafia!</span>
+                    <div class="avatar">R</div>
+                </div>
+            </header>
+            <section class="intro">
+                <h2>Overview</h2>
+                <p>Welcome to your admin dashboard.</p>
+            </section>
+            <section class="stats">
+
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p class="number">1,250</p>
+                    <span>Registered users</span>
+                </div>
+
+                <div class="card">
+                    <h3>Total Sales</h3>
+                    <p class="number">$8,450</p>
+                    <span>This month's sales</span>
+                </div>
+
+                <div class="card">
+                    <h3>Orders</h3>
+                    <p class="number">320</p>
+                    <span>Total orders</span>
+                </div>
+
+                <div class="card">
+                    <h3>Revenue</h3>
+                    <p class="number">$12,800</p>
+                    <span>Total revenue</span>
+                </div>
+
+            </section>
+            <section class="table-section">
+
+                <h2>Recent Users</h2>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>Ali Ahmed</td>
+                                <td>ali@example.com</td>
+                                <td>Admin</td>
+                                <td><span class="status active-status">Active</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>02</td>
+                                <td>Sara Khan</td>
+                                <td>sara@example.com</td>
+                                <td>Editor</td>
+                                <td><span class="status active-status">Active</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>03</td>
+                                <td>Ahmed Raza</td>
+                                <td>ahmed@example.com</td>
+                                <td>User</td>
+                                <td><span class="status pending-status">Pending</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>04</td>
+                                <td>Ayesha Noor</td>
+                                <td>ayesha@example.com</td>
+                                <td>User</td>
+                                <td><span class="status active-status">Active</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            <footer>
+                <p>&copy; 2026 Admin Dashboard. All rights reserved.</p>
+            </footer>
+
+        </main>
+    </div>
+</body>
+
+</html>

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Intern profile portal</title>
 </head>
 
@@ -132,7 +133,7 @@
                         <label for="date">Preferred Contact Date:</label>
                         <input type="date" id="date" name="contact_date">
                     </p>
-                     <p>
+                    <p>
                         <label for="department">Select Department:</label>
 
                         <select id="department" name="department" required>
@@ -142,27 +143,18 @@
                             <option value="design">UI/UX Design</option>
                         </select>
                     </p>
-                     <p>
+                    <p>
                         <label for="resume">Upload Resume:</label>
-                        <input
-                            type="file"
-                            id="resume"
-                            name="resume"
-                            accept=".pdf,.doc,.docx">
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
                     </p>
 
                     <p>
                         <label for="message">Message:</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="5"
-                            cols="30"
-                            placeholder="Write your message here"
+                        <textarea id="message" name="message" rows="5" cols="30" placeholder="Write your message here"
                             required></textarea>
                     </p>
                 </fieldset>
-                 <button type="submit">Submit Form</button>
+                <button type="submit">Submit Form</button>
                 <button type="reset">Reset Form</button>
 
             </form>
