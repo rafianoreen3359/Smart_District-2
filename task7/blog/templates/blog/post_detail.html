@@ -1,0 +1,33 @@
+{% extends 'blog/base.html' %}
+
+
+{% block title %}
+{{ post.title }}
+{% endblock %}
+
+
+{% block content %}
+
+<article class="post-detail">
+
+    <h1>{{ post.title }}</h1>
+
+    <p>
+        Author: {{ post.author.username }}
+    </p>
+
+    <p>
+        Published: {{ post.published_date|date:"d M Y" }}
+    </p>
+
+    <div>
+        {{ post.body|linebreaks }}
+    </div>
+
+    <a href="{% url 'post_list' %}">
+        Back to Home
+    </a>
+
+</article>
+
+{% endblock %}
