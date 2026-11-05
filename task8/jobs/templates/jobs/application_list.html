@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Received Applications</title>
+    {% load static %}
+<link rel="stylesheet" href="{% static 'jobs/style.css' %}">
+</head>
+<body>
+
+    <h1>Applications Received</h1>
+
+    {% for application in applications %}
+
+        <div>
+            <h3>{{ application.job.title }}</h3>
+
+            <p>
+                Applicant:
+                {{ application.applicant.username }}
+            </p>
+
+            <p>
+                Cover Letter:
+                {{ application.cover_letter }}
+            </p>
+
+            <p>
+                Applied At:
+                {{ application.applied_at }}
+            </p>
+        </div>
+
+        <hr>
+
+    {% empty %}
+
+        <p>No applications received yet.</p>
+
+    {% endfor %}
+
+    <a href="{% url 'job_list' %}">Back to Jobs</a>
+
+</body>
+</html>

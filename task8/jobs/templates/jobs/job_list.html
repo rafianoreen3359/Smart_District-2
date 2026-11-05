@@ -1,0 +1,46 @@
+{% load static %}
+
+<head>
+    <title>CareerHub</title>
+    <link rel="stylesheet" href="{% static 'jobs/style.css' %}">
+</head>
+<nav class="navbar">
+    <div class="logo">CareerHub</div>
+
+    <div class="nav-links">
+        <a href="{% url 'job_list' %}">Home</a>
+        <a href="{% url 'job_create' %}">Post Job</a>
+        <a href="{% url 'company_applications' %}">Applications</a>
+        <a href="{% url 'login' %}">Login</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Find Your Dream Job Today</h1>
+    <p>Discover opportunities and build your professional future.</p>
+    <a href="{% url 'job_create' %}" class="btn">Post a Job</a>
+</section>
+
+<div class="container">
+    <h2 class="section-title">Latest Jobs</h2>
+
+    <div class="job-grid">
+        {% for job in jobs %}
+            <div class="job-card">
+                <h3>{{ job.title }}</h3>
+                <p>{{ job.company }}</p>
+                <p>Location: {{ job.location }}</p>
+                <p>Type: {{ job.job_type }}</p>
+                <a href="{% url 'apply_job' job.id %}" class="btn">
+                    Apply Now
+                </a>
+            </div>
+        {% empty %}
+            <p>No jobs available yet.</p>
+        {% endfor %}
+    </div>
+</div>
+
+<footer class="footer">
+    <p>© 2026 CareerHub | All Rights Reserved</p>
+</footer>

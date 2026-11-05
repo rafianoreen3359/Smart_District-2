@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply for Job</title>
+    {% load static %}
+<link rel="stylesheet" href="{% static 'jobs/style.css' %}">
+</head>
+<body>
+
+    <h1>Apply for {{ view.job.title }}</h1>
+
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+    <a href="{% url 'job_list' %}">Back to Jobs</a>
+
+</body>
+</html>
